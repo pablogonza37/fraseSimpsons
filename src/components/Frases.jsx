@@ -1,6 +1,6 @@
 import { Card } from "react-bootstrap";
 
-const Frases = () => {
+const Frases = ({personaje}) => {
     return (
         <section className="my-5">
       <h2>{personaje.character}</h2>
