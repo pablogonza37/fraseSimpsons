@@ -4,7 +4,7 @@ Este proyecto React muestra de manera aleatoria una imagen y frase de un persona
 
 ## Demo
 
-Puedes ver una demostración del proyecto en vivo en [Netlify](https://example.netlify.app).
+Puedes ver una demostración del proyecto en vivo en [Netlify](https://illustrious-croissant-98e31e.netlify.app/).
 
 ## Cómo funciona
 
