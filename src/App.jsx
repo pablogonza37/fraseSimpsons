@@ -14,13 +14,17 @@ function App() {
   }, []);
 
   const consultarAPI = async () => {
-    setMostrarSpinner(true);
-    const respuesta = await fetch(
-      "https://thesimpsonsquoteapi.glitch.me/quotes"
-    );
-    const datos = await respuesta.json();
-    setPersonaje(datos[0]);
-    setMostrarSpinner(false);
+    try {
+      setMostrarSpinner(true);
+      const respuesta = await fetch(
+        "https://thesimpsonsquoteapi.glitch.me/quotes"
+      );
+      const datos = await respuesta.json();
+      setPersonaje(datos[0]);
+      setMostrarSpinner(false);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const mostrarComponente = mostrarSpinner ? (
